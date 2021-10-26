@@ -1,0 +1,305 @@
+//
+//  Group.swift
+//  ClaroVideoServices
+//
+//  Created by Alejandro Perez on 11/1/19.
+//  Copyright © 2019 amco. All rights reserved.
+//
+
+import Foundation
+
+
+final public class Group: NSObject {
+  /* There are two APIs that set the title property:
+   *
+   *  -> content/list
+   *  -> content/data
+   *
+   * For content/list:
+   *  -> a movie title is: "Spiderman"
+   *  -> a serie title is: "Breaking Bad"
+   *
+   * For content/data:
+   *  -> a movie title is: "Spiderman"
+   *  -> a serie title is: "Breaking Bad - T01-Ep01" (that is because content/data returns a especific episode)
+   *
+   * If you want to get the name of the content (Spiderman or Breaking Bad), use "titleName" property
+   */
+  @objc public var title: String
+  
+  /* Title of the first episode of a serie
+   
+   * For a movie the value is: null
+   * For a serie the value is: "Breaking Bad - T01-Ep01"
+   */
+  @objc public var titleEpisode: String
+  
+  /* Original title of the movie or serie
+   
+   * Example for México: Solo en casa: Original: Home Alone
+   */
+  @objc public var titleOriginal: String
+  
+  /* Name of the title for a movie or a serie
+   
+   * For a movie the value is: "Spiderman"
+   * For a serie the value is: "Breaking Bad"
+   */
+  @objc public var titleName: String
+    
+  @objc public var titleUri: String
+  // MARK:- Content/Data
+  @objc public var imageLargeAlt: String
+  @objc public var imageMediumAlt: String
+  @objc public var imageSmallAlt: String
+  @objc public var imageSpritesURL: String
+  @objc public var largeDescription: String
+  @objc public var mediaType: String
+  @objc public var objState: String
+  @objc public var objStateDesc: String
+  @objc public var objTypeId: String
+  @objc public var position: String
+  @objc public var smallDescription: String
+  @objc public var state: String
+  // MARK:- Content/List
+  @objc public var crest: String
+  @objc public var date: String
+  @objc public var descriptionLarge: String
+  @objc public var duration: String
+  @objc public var episodeNumber: String
+  @objc public var group_description: String // Should the be cammel case?
+  @objc public var group_id: String  // Should the be cammel case?
+  @objc public var formatTypes: String
+  // MARK:- EPG/Channel
+  @objc public var imageBaseHorizontal: String
+  @objc public var imageBaseVertical: String
+  /**
+   * NOTE!: There are two properties with the name 'proveedorName'
+   *
+   *  This is set in content/data
+   *  group.extended.media.proveedorName
+   *
+   *  This is set in content/list
+   *  group.proveedorName;
+   *
+   * USE!: [group provider]
+   */
+  @objc public var proveedorCode: String
+  @objc public var imageBackground: String
+  @objc public var imageHighlight: String
+  @objc public var appBehaviour: String
+  @objc public var imageLarge: String
+  @objc public var imageMedium: String
+  @objc public var imageSmall: String
+  @objc public var item_id: String
+  @objc public var liveEnabled: String
+  @objc public var liveRef: String
+  @objc public var liveType: String
+  @objc public var preview: String
+  @objc public var seasonNumber: String
+  @objc public var section: String
+  @objc public var special: String
+  @objc public var url: String
+  @objc public var volant: String
+  @objc public var votesAverage: Float
+  @objc public var year: String
+  @objc public var ratingCode: String
+  @objc public var isMusicContent: Int
+  @objc public var imageStill: String
+  @objc public var urlImageT1: String
+  @objc public var urlImageT2: String
+  @objc public var imageBaseSquare: String
+  @objc public var imageCleanHorizontal: String
+  @objc public var imageCleanVertical: String
+  @objc public var imageCleanSquare: String
+  @objc public var imageFrames: String
+  @objc public var channelNumber: String
+  @objc public var timeShift: String
+  @objc public var proveedorName: String
+  @objc public var encoderTechnology: EncoderTechnology?
+  @objc public var recorderTechnology: EncoderTechnology?
+  @objc public var resourceName: String
+  @objc public var isSeries: Bool
+  @objc public var vistime: Vistime?
+  @objc public var ranking: Ranking?
+  @objc public var extended: ExtendedGroup?
+  @objc public var externalData: ExternalData?
+  //MARK:- Properties just for tvOS Images
+  #if os(tvOS)
+  @objc public var statusVerified: Bool = false
+  @objc public var cacheElement: Any? = nil
+<<<<<<< HEAD
+  
+  // THIS ATTRIBUTES IS ONLY FOR IOS
+  @objc public var paywayToken: String?
+  @objc public var subscriptionType: String?
+  @objc public var gatewayPurchased: String?
+  @objc public var purchaseId: String?
+  @objc public var offerId: String?
+  @objc public var resumeTime: Int = 0
+  @objc public var oneOfferType: String?
+  @objc public var isPurchased: Bool = false
+  @objc public var wasPurchased: Bool = false
+  @objc public var startdate: String?
+  @objc public var fromRibbon: String?
+  @objc public var listButtons: [[String: Any]]? = []
+  @objc public var offerDescription: String?
+  @objc public var offerPrice: String?
+  @objc public var canPlay: Bool = false
+  @objc public var startTime: Date?
+  @objc public var endTime: Date?
+  @objc public var module: Module?
+   
+  
+=======
+  #endif
+>>>>>>> develop
+  // MARK: - Instance Methods
+  public init(title: String = "", titleEpisode: String = "", titleOriginal: String = "", titleName: String = "", titleUri: String = "",
+              imageLargeAlt: String = "", imageMediumAlt: String = "", imageSmallAlt: String = "",
+              imageSpritesURL: String = "", largeDescription: String = "", mediaType: String = "", objState: String = "",
+              objStateDesc: String = "", objTypeId: String = "", position: String = "", smallDescription: String = "",
+              state: String = "", crest: String = "", date: String = "", descriptionLarge: String = "",
+              duration: String = "", episodeNumber: String = "", group_description: String = "", group_id: String = "",
+              formatTypes: String = "", imageBaseHorizontal: String = "", imageBaseVertical: String = "",
+              proveedorCode: String = "", imageBackground: String = "", imageHighlight: String = "",
+              appBehaviour: String = "", imageLarge: String = "", imageMedium: String = "", imageSmall: String = "",
+              item_id: String = "", liveEnabled: String = "", liveRef: String = "", liveType: String = "",
+              preview: String = "", seasonNumber: String = "", section: String = "", special: String = "", url: String = "",
+              volant: String = "", votesAverage: Float = 0.0, year: String = "", ratingCode: String = "", isMusicContent: Int = 0,
+              imageStill: String = "", urlImageT1: String = "", urlImageT2: String = "", imageBaseSquare: String = "",
+              imageCleanHorizontal: String = "", imageCleanVertical: String = "", imageCleanSquare: String = "",
+              imageFrames: String = "", channelNumber: String = "", timeShift: String = "", proveedorName: String = "",
+              encoderTechnology: EncoderTechnology? = nil, recorderTechnology: EncoderTechnology? = nil,
+              resourceName: String = "", isSeries: Bool = false, vistime: Vistime? = nil, ranking: Ranking? = nil,
+              extended: ExtendedGroup? = nil) {
+    self.title = title
+    self.titleEpisode = titleEpisode
+    self.titleOriginal = titleOriginal
+    self.titleName = titleName
+    self.titleUri = titleUri
+    self.imageLargeAlt = imageLargeAlt
+    self.imageMediumAlt = imageMediumAlt
+    self.imageSmallAlt = imageSmallAlt
+    self.imageSpritesURL = imageSpritesURL
+    self.largeDescription = largeDescription
+    self.mediaType = mediaType
+    self.objState = objState
+    self.objStateDesc = objStateDesc
+    self.objTypeId = objTypeId
+    self.position = position
+    self.smallDescription = smallDescription
+    self.state = state
+    self.crest = crest
+    self.date = date
+    self.descriptionLarge = descriptionLarge
+    self.duration = duration
+    self.episodeNumber = episodeNumber
+    self.group_description = group_description
+    self.group_id = group_id
+    self.formatTypes = formatTypes
+    self.imageBaseHorizontal = imageBaseHorizontal
+    self.imageBaseVertical = imageBaseVertical
+    self.proveedorCode = proveedorCode
+    self.imageBackground = imageBackground
+    self.imageHighlight = imageHighlight
+    self.appBehaviour = appBehaviour
+    self.imageLarge = imageLarge
+    self.imageMedium = imageMedium
+    self.imageSmall = imageSmall
+    self.item_id = item_id
+    self.liveEnabled = liveEnabled
+    self.liveRef = liveRef
+    self.liveType = liveType
+    self.preview = preview
+    self.seasonNumber = seasonNumber
+    self.section = section
+    self.special = special
+    self.url = url
+    self.volant = volant
+    self.votesAverage = votesAverage
+    self.year = year
+    self.ratingCode = ratingCode
+    self.isMusicContent = isMusicContent
+    
+    self.imageStill = imageStill
+    self.urlImageT1 = urlImageT1
+    self.urlImageT2 = urlImageT2
+    self.imageBaseSquare = imageBaseSquare
+    self.imageCleanHorizontal = imageCleanHorizontal
+    self.imageCleanVertical = imageCleanVertical
+    self.imageCleanSquare = imageCleanSquare
+    self.imageFrames = imageFrames
+    self.channelNumber = channelNumber
+    self.timeShift = timeShift
+    self.proveedorName = proveedorName
+    self.encoderTechnology = encoderTechnology
+    self.recorderTechnology = recorderTechnology
+    self.resourceName = resourceName
+    self.isSeries = isSeries
+    self.vistime = vistime
+    self.ranking = ranking
+    self.extended = extended
+  }
+  
+  required convenience public init(from decoder: Decoder) throws {
+    self.init()
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+    titleEpisode = try container.decodeIfPresent(String.self, forKey: .titleEpisode) ?? ""
+    titleOriginal = try container.decodeIfPresent(String.self, forKey: .titleOriginal) ?? ""
+    titleUri = try container.decodeIfPresent(String.self, forKey: .titleUri) ?? ""
+    imageSpritesURL = try container.decodeIfPresent(String.self, forKey: .imageSpritesURL) ?? ""
+    crest = try container.decodeIfPresent(String.self, forKey: .crest) ?? ""
+    date = try container.decodeIfPresent(String.self, forKey: .date) ?? ""
+    descriptionLarge = try container.decodeIfPresent(String.self, forKey: .largeDescription) ?? (try container.decodeIfPresent(String.self, forKey: .descriptionLarge) ?? "")
+    duration = try container.decodeIfPresent(String.self, forKey: .duration) ?? ""
+    episodeNumber = try container.decodeIfPresent(String.self, forKey: .episodeNumber) ?? ""
+    group_description = try container.decodeIfPresent(String.self, forKey: .group_description) ?? ""
+    group_id = try
+      container.decodeIfPresent(String.self, forKey: .group_id) ??
+      (container.decodeIfPresent(String.self, forKey: .id) ?? "")
+    formatTypes = try container.decodeIfPresent(String.self, forKey: .formatTypes) ?? ""
+    imageBaseHorizontal = try container.decodeIfPresent(String.self, forKey: .imageBaseHorizontal) ?? ""
+    imageBaseVertical = try container.decodeIfPresent(String.self, forKey: .imageBaseVertical) ?? ""
+    proveedorCode = try container.decodeIfPresent(String.self, forKey: .proveedorCode) ?? ""
+    imageBackground = try container.decodeIfPresent(String.self, forKey: .imageBackground) ?? ""
+    imageHighlight = try container.decodeIfPresent(String.self, forKey: .imageHighlight) ?? ""
+    appBehaviour = try container.decodeIfPresent(String.self, forKey: .appBehaviour) ?? ""
+    imageLarge = try container.decodeIfPresent(String.self, forKey: .imageLarge) ?? ""
+    imageMedium = try container.decodeIfPresent(String.self, forKey: .imageMedium) ?? ""
+    imageSmall = try container.decodeIfPresent(String.self, forKey: .imageSmall) ?? ""
+    item_id = try container.decodeIfPresent(String.self, forKey: .item_id) ?? ""
+    liveEnabled = try container.decodeIfPresent(String.self, forKey: .liveEnabled) ?? ""
+    liveRef = try container.decodeIfPresent(String.self, forKey: .liveRef) ?? ""
+    liveType = try container.decodeIfPresent(String.self, forKey: .liveType) ?? ""
+    preview = try container.decodeIfPresent(String.self, forKey: .preview) ?? ""
+    seasonNumber = try container.decodeIfPresent(String.self, forKey: .seasonNumber) ?? ""
+    section = try container.decodeIfPresent(String.self, forKey: .section) ?? ""
+    special = try container.decodeIfPresent(String.self, forKey: .special) ?? ""
+    url = try container.decodeIfPresent(String.self, forKey: .url) ?? ""
+    volant = try container.decodeIfPresent(String.self, forKey: .volant) ?? ""
+    votesAverage = try container.decodeIfPresent(Float.self, forKey: .votesAverage) ?? 0.0
+    year = try container.decodeIfPresent(String.self, forKey: .year) ?? ""
+    ratingCode = try container.decodeIfPresent(String.self, forKey: .ratingCode) ?? ""
+    imageStill = try container.decodeIfPresent(String.self, forKey: .imageStill) ?? ""
+    urlImageT1 = try container.decodeIfPresent(String.self, forKey: .urlImageT1) ?? ""
+    urlImageT2 = try container.decodeIfPresent(String.self, forKey: .urlImageT2) ?? ""
+    imageBaseSquare = try container.decodeIfPresent(String.self, forKey: .imageBaseSquare) ?? ""
+    imageCleanHorizontal = try container.decodeIfPresent(String.self, forKey: .imageCleanHorizontal) ?? ""
+    imageCleanVertical = try container.decodeIfPresent(String.self, forKey: .imageCleanVertical) ?? ""
+    imageCleanSquare = try container.decodeIfPresent(String.self, forKey: .imageCleanSquare) ?? ""
+    imageFrames = try container.decodeIfPresent(String.self, forKey: .imageFrames) ?? ""
+    channelNumber = try container.decodeIfPresent(String.self, forKey: .channelNumber) ?? ""
+    timeShift = try container.decodeIfPresent(String.self, forKey: .timeShift) ?? ""
+    proveedorName = try container.decodeIfPresent(String.self, forKey: .proveedorName) ?? ""
+    encoderTechnology = try container.decodeIfPresent(EncoderTechnology.self, forKey: .encoderTechnology)
+    recorderTechnology = try container.decodeIfPresent(EncoderTechnology.self, forKey: .recorderTechnology)
+    resourceName = try container.decodeIfPresent(String.self, forKey: .resourceName) ?? ""
+    isSeries = try container.decodeIfPresent(Bool.self, forKey: .isSeries) ?? false
+    vistime = try container.decodeIfPresent(Vistime.self, forKey: .vistime)
+    ranking = try container.decodeIfPresent(Ranking.self, forKey: .ranking)
+    extended = try container.decodeIfPresent(ExtendedGroup.self, forKey: .extended)
+    
+  }
+}

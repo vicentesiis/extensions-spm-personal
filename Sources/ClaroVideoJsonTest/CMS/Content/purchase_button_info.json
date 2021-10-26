@@ -1,0 +1,42 @@
+{
+    "listButtons": {
+        "button": [
+            {
+                "waspurchased": "0",
+                "purchasechecked": "0",
+                "price": "149",
+                "offerid": "14330302",
+                "currency": "$",
+                "paymentmethod": null,
+                "purchaseid": null,
+                "oneoffertype": "subscrition",
+                "linkworkflowstart": "\/services\/payway\/workflowstart?object_type=A&offer_id=14330302&suscription_id=2540&device_category=tablet&device_manufacturer=aapl&device_model=aapl&device_type=iPad&HKS=%2873CCE1468FD74837A11AD9977FD7D0176165ebbe68e2d%29&region=mexico&season_id=&user_id=55651652",
+                "gateway": "itunesgate",
+                "oneofferdesc": "Contrata HBO",
+                "producttype": "HBO",
+                "key": "Telmexmexico_abono_HBO",
+                "bannerpromo": "hbo_subscrition_mexico_wp0_itunesgate",
+                "family": "hbo",
+                "banner": "banner_hbo",
+                "bonus": "bonus_hbo",
+                "includes": "includes_hbo",
+                "buy": "buy_hbo",
+                "style": "style_hbo",
+                "periodicity": "month",
+                "frequency": 1
+            }
+        ]
+    },
+    "downloadButton": {
+        "visible": "0"
+    },
+    "playButton": {
+        "visible": "0"
+    },
+    "bannerpromo": "hbo_subscrition_mexico_wp0_itunesgate",
+    "timeshift": "",
+    "accessCode": {
+        "enabled": false,
+        "msgAccessCode": "Protege tus pagos y activa el control parental con tu PIN de protección. Configúralo desde tu computadora en el menú de tu perfil."
+    }
+}

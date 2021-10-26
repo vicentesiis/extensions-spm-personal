@@ -1,0 +1,319 @@
+{
+    "position": 0,
+    "id": "942823",
+    "title": "Drácula: La Historia Jamás Contada",
+    "description": "Para proteger a su reino, Vlad acepta convertirse en vampiro, un demonio temido tanto por sus enemigos como por su propio pueblo.",
+    "large_description": "Para proteger a su reino de los turcos, el príncipe Vlad acepta convertirse en un ser demoniaco, temido por sus enemigos y por su propio pueblo. ¿Será más fuerte su amor y lealtad por sus seres queridos que la oscuridad que lo consume?",
+    "short_description": null,
+    "duration": "01:32:02",
+    "image_large_alt": "Drácula: La Historia Jamás Contada",
+    "image_medium_alt": "Drácula: La Historia Jamás Contada",
+    "image_small_alt": "Drácula: La Historia Jamás Contada",
+    "image_large": "https:\/\/clarovideocdn1.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/SS\/TTL773680WHORIZONTAL.jpg?size=675x380",
+    "image_medium": "https:\/\/clarovideocdn9.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/SS\/TTL773680WVERTICAL.jpg?size=200x300",
+    "image_small": "https:\/\/clarovideocdn1.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/SS\/TTL773680WHORIZONTAL.jpg?size=290x163",
+    "image_still": "https:\/\/clarovideocdn0.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/STILLS\/TTL773680-STILL-01.jpg",
+    "image_background": "https:\/\/clarovideocdn9.clarovideo.net\/HBO\/PELICULAS\/DRACULAUNTOLD\/EXPORTACION_WEB\/CLEAN\/DRACULAUNTOLD_e-1280x720.jpg",
+    "image_base_horizontal": "https:\/\/clarovideocdn8.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/SS\/TTL773680WHORIZONTAL.jpg",
+    "image_base_vertical": "https:\/\/clarovideocdn6.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/SS\/TTL773680WVERTICAL.jpg",
+    "image_base_square": "",
+    "image_clean_horizontal": "https:\/\/clarovideocdn1.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/CLEAN\/TTL773680WHORIZONTAL.jpg",
+    "image_clean_vertical": "https:\/\/clarovideocdn9.clarovideo.net\/HBO\/PELICULAS\/TTL773680\/EXPORTACION_WEB\/CLEAN\/TTL773680WVERTICAL.jpg",
+    "image_clean_square": "",
+    "image_sprites": "",
+    "image_frames": "",
+    "image_external": null,
+    "image_trickplay": "",
+    "date": "20211005171654",
+    "media_type": "2",
+    "title_uri": "Dracula-La-Historia-Jamas-Contada",
+    "extendedcommon": {
+        "keywords": {
+            "keyword": [
+                "127597417"
+            ]
+        },
+        "genres": {
+            "genre": [
+                {
+                    "id": "53322",
+                    "name": "Películas",
+                    "desc": "Películas"
+                }
+            ]
+        },
+        "roles": {
+            "role": [
+                {
+                    "id": "13617516",
+                    "name": "Actor",
+                    "desc": "Actor",
+                    "talents": {
+                        "talent": [
+                            {
+                                "id": "46258910",
+                                "name": "Luke",
+                                "surname": "Evans",
+                                "fullname": "Evans, Luke"
+                            },
+                            {
+                                "id": "99308194",
+                                "name": "Sarah",
+                                "surname": "Gadon",
+                                "fullname": "Gadon, Sarah"
+                            },
+                            {
+                                "id": "15049266",
+                                "name": "Dominic",
+                                "surname": "Cooper",
+                                "fullname": "Cooper, Dominic"
+                            },
+                            {
+                                "id": "138670095",
+                                "name": "Art",
+                                "surname": "Parkinson",
+                                "fullname": "Parkinson, Art"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "13617517",
+                    "name": "Director",
+                    "desc": "Director",
+                    "talents": {
+                        "talent": [
+                            {
+                                "id": "112704869",
+                                "name": "Gary",
+                                "surname": "Shore",
+                                "fullname": "Shore, Gary"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "13965643",
+                    "name": "Writer",
+                    "desc": "Escritor",
+                    "talents": {
+                        "talent": [
+                            {
+                                "id": "131157660",
+                                "name": "Matt",
+                                "surname": "Sazama",
+                                "fullname": "Sazama, Matt"
+                            },
+                            {
+                                "id": "131157661",
+                                "name": "Burk",
+                                "surname": "Sharpless",
+                                "fullname": "Sharpless, Burk"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "format": {
+            "id": "13872259",
+            "name": "Type 3",
+            "types": "susc",
+            "sell_type": "susc",
+            "est": "N"
+        },
+        "media": {
+            "originaltitle": "DRACULA UNTOLD",
+            "description_extended": "Para proteger a su reino de los turcos, el príncipe Vlad acepta convertirse en un ser demoniaco, temido por sus enemigos y por su propio pueblo. ¿Será más fuerte su amor y lealtad por sus seres queridos que la oscuridad que lo consume?",
+            "publishyear": "2014",
+            "boxoffice": null,
+            "rating": {
+                "id": "20",
+                "code": "PG",
+                "desc": "Puede contener escenas no aptas para todo público"
+            },
+            "duration": "01:32:02",
+            "haspreview": "false",
+            "countryoforigin": {
+                "code": "AR",
+                "desc": "Argentina"
+            },
+            "profile": {
+                "audiotype": "Stereo",
+                "videotype": "Color",
+                "screenformat": "16:9",
+                "hd": {
+                    "enabled": "false"
+                }
+            },
+            "islive": "0",
+            "livetype": null,
+            "liveref": null,
+            "timeshift": null,
+            "encoder_tecnology": {
+                "id": null,
+                "desc": null
+            },
+            "recorder_technology": {
+                "id": null,
+                "desc": null
+            },
+            "resource_name": null,
+            "rollingcreditstime": "-5522",
+            "rollingcreditstimedb": "-5522",
+            "proveedor": {
+                "id": "4",
+                "codigo": "hbo",
+                "nombre": "HBO"
+            },
+            "rights": {
+                "start_date": "2021-10-01",
+                "end_date": "2022-12-31"
+            },
+            "channel_number": null,
+            "language": {
+                "original": {
+                    "id": "ING",
+                    "desc": "Inglés"
+                },
+                "dubbed": "true",
+                "subbed": "true",
+                "options": {
+                    "option": [
+                        {
+                            "group_id": "942823",
+                            "content_id": "1057148",
+                            "current_content": "false",
+                            "option_id": "O-EN",
+                            "audio": "ORIGINAL",
+                            "subtitle": null,
+                            "option_name": "original",
+                            "id": "EN",
+                            "desc": "Inglés",
+                            "label_short": "Id. Inglés",
+                            "label_large": "Idioma Original Inglés",
+                            "intro_start_time": null,
+                            "intro_finish_time": null,
+                            "credits_start_time": "-5522",
+                            "encodes": [
+                                "hlsfps",
+                                "hlsfps_ma",
+                                "smooth_streaming",
+                                "smooth_streaming_ma",
+                                "dashwv",
+                                "dashwv_ma"
+                            ],
+                            "fast_play": []
+                        },
+                        {
+                            "group_id": "942823",
+                            "content_id": "1057983",
+                            "current_content": "false",
+                            "option_id": "D-ES",
+                            "audio": "ES",
+                            "subtitle": null,
+                            "option_name": "dubbed",
+                            "id": "ES",
+                            "desc": "Español",
+                            "label_short": "Dob. Español",
+                            "label_large": "Doblada al Español",
+                            "intro_start_time": null,
+                            "intro_finish_time": null,
+                            "credits_start_time": "-5522",
+                            "encodes": [
+                                "hlsfps",
+                                "hlsfps_ma",
+                                "smooth_streaming",
+                                "smooth_streaming_ma",
+                                "dashwv",
+                                "dashwv_ma"
+                            ],
+                            "fast_play": []
+                        },
+                        {
+                            "group_id": "942823",
+                            "content_id": "1057984",
+                            "current_content": "false",
+                            "option_id": "D-PT",
+                            "audio": "PT",
+                            "subtitle": null,
+                            "option_name": "dubbed",
+                            "id": "PT",
+                            "desc": "Portugués",
+                            "label_short": "Dob. Portugués",
+                            "label_large": "Doblada al Portugués",
+                            "intro_start_time": null,
+                            "intro_finish_time": null,
+                            "credits_start_time": "-5522",
+                            "encodes": [
+                                "hlsfps",
+                                "hlsfps_ma",
+                                "smooth_streaming",
+                                "smooth_streaming_ma",
+                                "dashwv",
+                                "dashwv_ma"
+                            ],
+                            "fast_play": []
+                        },
+                        {
+                            "group_id": "942823",
+                            "content_id": "1058772",
+                            "current_content": "false",
+                            "option_id": "S-PT",
+                            "audio": "ORIGINAL",
+                            "subtitle": "PT",
+                            "option_name": "subbed",
+                            "id": "PT",
+                            "desc": "Portugués",
+                            "label_short": "Subt. Portugués",
+                            "label_large": "Subtitulada al Portugués",
+                            "intro_start_time": null,
+                            "intro_finish_time": null,
+                            "credits_start_time": "-5522",
+                            "encodes": [
+                                "hlsfps",
+                                "hlsfps_ma",
+                                "smooth_streaming",
+                                "smooth_streaming_ma",
+                                "dashwv",
+                                "dashwv_ma"
+                            ],
+                            "fast_play": []
+                        },
+                        {
+                            "group_id": "942823",
+                            "content_id": "1062561",
+                            "current_content": "false",
+                            "option_id": "S-ES",
+                            "audio": "ORIGINAL",
+                            "subtitle": "ES",
+                            "option_name": "subbed",
+                            "id": "ES",
+                            "desc": "Español",
+                            "label_short": "Subt. Español",
+                            "label_large": "Subtitulada al Español",
+                            "intro_start_time": null,
+                            "intro_finish_time": null,
+                            "credits_start_time": "-5522",
+                            "encodes": [
+                                "hlsfps",
+                                "hlsfps_ma",
+                                "smooth_streaming",
+                                "smooth_streaming_ma",
+                                "dashwv",
+                                "dashwv_ma"
+                            ],
+                            "fast_play": []
+                        }
+                    ],
+                    "count": 5
+                }
+            }
+        }
+    },
+    "ranking": {
+        "views_count": 0,
+        "votes_count": 0,
+        "average_votes": 4
+    }
+}
