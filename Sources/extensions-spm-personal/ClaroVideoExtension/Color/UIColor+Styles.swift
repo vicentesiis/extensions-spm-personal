@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-  public enum cvBlack {
+  enum cvBlack {
     public static let _121212 = UIColor(HexString: "#121212")
     public static let _1D1717 = UIColor(HexString: "#1D1717")
     public static let _1D1D1D = UIColor(HexString: "#1D1D1D")

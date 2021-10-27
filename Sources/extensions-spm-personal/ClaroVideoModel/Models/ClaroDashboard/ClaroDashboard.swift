@@ -6,7 +6,7 @@
 //  Copyright © 2021 amco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol ClaroDashboardDelegate: AnyObject {
   func getClaroDashboardUri() -> String?

@@ -6,7 +6,7 @@
 //  Copyright © 2019 ironbit. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol Storyboarded {
   static func instantiate(fromStoryboard nibName: String) -> Self

@@ -6,7 +6,7 @@
 //  Copyright © 2021 amco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct LocalizedPayment {
   public static func getTrialText(bonusLocalized: Bool = true, keyPrefix: String, bonus: String,

@@ -6,7 +6,7 @@
 //  Copyright © 2017 AMCO. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Localizable
 extension String: Localizable {
